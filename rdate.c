@@ -1,4 +1,4 @@
-/* rdate.c - client program for remote date service */
+/* rdate.c - programa cliente */
 
 #include <stdio.h>
 #include <rpc/rpc.h>
@@ -27,7 +27,7 @@ int main(int argc, char *argv[]) {
     }
     
     /* chamada ao procedimento remoto bindate() */
-    if (( lres = bindate_1(NULL, cl)) == NULL) {
+    if ((lres = bindate_1(NULL, cl)) == NULL) {
         printf("erro ao executar o procedimento remoto bindate()\n");
         exit(3);
     }

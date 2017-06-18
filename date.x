@@ -6,5 +6,4 @@ program DATEPROG {	/* remote program name (not used)*/
     version DATEVERS { /* declaration of program version number*/
         long BINDATE(void) = 1; /* procedure number = 1 */
     } = 1;	/* definition of program version = 1*/
-} = 0x3012225;	/* remote program number (must be
-unique)*/
+} = 0x3012225;	/* remote program number (must be unique)*/
