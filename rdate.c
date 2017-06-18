@@ -27,8 +27,8 @@ int main(int argc, char *argv[]) {
     }
     
     /* chamada ao procedimento remoto bindate() */
-    if ((lres = bindate_1(NULL, cl)) == NULL) {
-        printf("erro ao executar o procedimento remoto bindate()\n");
+    if ((lres = obter_data_1(NULL, cl)) == NULL) {
+        printf("erro ao executar o procedimento remoto obter_data()\n");
         exit(3);
     }
     
