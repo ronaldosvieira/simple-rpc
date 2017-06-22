@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <rpc/rpc.h>
+#include <time.h>
 #include "date.h"
 
 long * obter_data_1_svc(void* arg1, struct svc_req *arg2) {
