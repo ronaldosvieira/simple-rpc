@@ -10,6 +10,7 @@ int main(int argc, char *argv[]) {
     CLIENT *cl;
     char *server;
     long *lres;
+    
     struct tm date;
     char date_str[80];
     
@@ -26,7 +27,7 @@ int main(int argc, char *argv[]) {
         exit(2);
     }
     
-    /* chamada ao procedimento remoto bindate() */
+    /* chamada ao procedimento remoto obter_data() */
     if ((lres = obter_data_1(NULL, cl)) == NULL) {
         printf("erro ao executar o procedimento remoto obter_data()\n");
         exit(3);
